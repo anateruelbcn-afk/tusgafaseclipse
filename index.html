@@ -7,134 +7,262 @@
 
 <style>
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0a0a0a;
-    color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #090909;
+  color: white;
+  line-height: 1.6;
 }
 
 .hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
-    url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.9)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  max-width: 900px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    max-width: 800px;
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 20px;
 }
 
 .hero p {
-    font-size: 20px;
-    margin-top: 20px;
-    color: #ccc;
+  font-size: 22px;
+  color: #ddd;
 }
 
 .btn {
-    margin-top: 30px;
-    padding: 15px 30px;
-    background: #f5a623;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 30px;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 32px;
+  background: #f5b642;
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 40px;
 }
 
 .section {
-    padding: 80px 20px;
-    text-align: center;
-    max-width: 1000px;
-    margin: auto;
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  color: #ccc;
+  font-size: 18px;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .card {
-    background: #111;
-    padding: 30px;
-    border-radius: 15px;
-    width: 280px;
+  background: #151515;
+  border: 1px solid #252525;
+  border-radius: 20px;
+  padding: 32px;
+  width: 290px;
+  text-align: left;
+}
+
+.card h3 {
+  color: #f5b642;
+  font-size: 22px;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.highlight {
+  background: #f5b642;
+  color: #111;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.highlight h2 {
+  font-size: 38px;
+}
+
+.highlight p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 20px;
 }
 
 .footer {
-    padding: 40px;
-    text-align: center;
-    font-size: 14px;
-    color: #777;
+  padding: 40px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-    <div>
-        <h1>Convierte el eclipse del 12 de agosto de 2026 en ventas y experiencia para tus clientes</h1>
-        <p>Soluciones simples para hoteles, campings y chiringuitos</p>
-        <a href="mailto:tuemail@ejemplo.com" class="btn">Quiero información</a>
+<section class="hero">
+  <div class="hero-content">
+    <h1>Convierte el eclipse de 2026 en una experiencia rentable para tus clientes</h1>
+    <p>
+      Kits llave en mano para hoteles, campings y chiringuitos:
+      gafas homologadas, contenido visual y soluciones listas para vender.
+    </p>
+    <a class="btn" href="mailto:TUEMAIL@EJEMPLO.COM">Solicitar información</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>El 12 de agosto no será un día cualquiera</h2>
+  <p>
+    El eclipse solar total de 2026 atraerá la atención de miles de personas.
+    Para hoteles, campings y chiringuitos será una oportunidad única para
+    aumentar ventas, mejorar la experiencia del cliente y generar recuerdo de marca.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Una solución llave en mano</h2>
+  <p>
+    Sabemos que en plena temporada alta su equipo no tiene tiempo para improvisar.
+    Por eso entregamos una propuesta sencilla, visual y lista para activar.
+  </p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Gafas homologadas</h3>
+      <p>
+        Gafas con certificación ISO 12312-2 para una observación segura del eclipse.
+        Una forma sencilla de proteger a sus clientes y ofrecer tranquilidad.
+      </p>
     </div>
-</div>
 
-<div class="section">
-    <h2>Un momento único. Una oportunidad real.</h2>
-    <p>
-    El eclipse solar total atraerá a miles de personas.
-    La diferencia está en cómo lo aprovechas.
-    </p>
-</div>
-
-<div class="section">
-    <h2>¿Qué hacemos?</h2>
-    <div class="cards">
-
-        <div class="card">
-            <h3>🏨 Hoteles</h3>
-            <p>Convierte el eclipse en una experiencia memorable para tus clientes y diferénciate.</p>
-        </div>
-
-        <div class="card">
-            <h3>🏕️ Campings</h3>
-            <p>Activa a familias y niños con una experiencia que recordarán todo el verano.</p>
-        </div>
-
-        <div class="card">
-            <h3>🍹 Chiringuitos</h3>
-            <p>Aumenta tu ticket medio con soluciones rápidas y fáciles de vender.</p>
-        </div>
-
+    <div class="card">
+      <h3>Contenido para pantallas</h3>
+      <p>
+        Cuenta atrás, curiosidades, trivias y mensajes de seguridad para dinamizar
+        terrazas, bares, recepciones y zonas comunes.
+      </p>
     </div>
-</div>
 
-<div class="section">
-    <h2>Soluciones listas para implementar</h2>
-    <p>
-    Gafas homologadas · Packs listos para venta · Material visual · Activación sencilla
-    </p>
-</div>
+    <div class="card">
+      <h3>Material listo para vender</h3>
+      <p>
+        Packs pensados para generar ingresos extra: gafas, expositores,
+        cartelería y opciones adaptadas a cada tipo de establecimiento.
+      </p>
+    </div>
+  </div>
+</section>
 
-<div class="section">
-    <h2>El 12 de agosto va a pasar igual</h2>
-    <p>
-    La pregunta es: ¿lo vas a aprovechar o lo vas a dejar pasar?
-    </p>
-    <a href="mailto:tuemail@ejemplo.com" class="btn">Hablemos</a>
-</div>
+<section class="section">
+  <h2>Soluciones para cada negocio</h2>
 
-<div class="footer">
-    Eclipse for Hotels · 2026
-</div>
+  <div class="cards">
+    <div class="card">
+      <h3>Hoteles</h3>
+      <p>
+        Una experiencia premium para huéspedes: seguridad, contenido visual
+        y un momento memorable para compartir en redes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Campings</h3>
+      <p>
+        Actividades familiares, niños implicados y una experiencia temática
+        que convierte el eclipse en parte de las vacaciones.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Chiringuitos</h3>
+      <p>
+        Packs rápidos de venta para aumentar el ticket medio:
+        bebidas, gafas y soluciones take away para la playa.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Planes orientativos</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Basic</h3>
+      <p>100 gafas + expositor</p>
+      <p class="price">120 €</p>
+      <p>Ideal para pequeños establecimientos.</p>
+    </div>
+
+    <div class="card">
+      <h3>Rentabilidad</h3>
+      <p>300 gafas + expositor + contenido digital</p>
+      <p class="price">330 €</p>
+      <p>La opción más equilibrada para hoteles y campings.</p>
+    </div>
+
+    <div class="card">
+      <h3>Eclipse</h3>
+      <p>500 gafas + 2 expositores + contenido digital</p>
+      <p class="price">490 €</p>
+      <p>Máximo impacto para establecimientos con alto volumen.</p>
+    </div>
+  </div>
+
+  <p style="margin-top:30px;">
+    Precios orientativos sin IVA. Envío incluido.
+  </p>
+</section>
+
+<section class="highlight">
+  <h2>Más ventas. Más experiencia. Más recuerdo.</h2>
+  <p>
+    El eclipse será uno de los momentos más fotografiados del verano.
+    Su establecimiento puede limitarse a verlo pasar… o convertirlo en una experiencia
+    organizada, segura y rentable para sus clientes.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Reserva tu kit Eclipse 2026</h2>
+  <p>
+    El stock es limitado y la demanda aumentará a medida que se acerque la fecha.
+    Podemos ayudarte a elegir el formato más adecuado para tu hotel, camping o chiringuito.
+  </p>
+  <a class="btn" href="mailto:TUEMAIL@EJEMPLO.COM">Quiero información</a>
+</section>
+
+<footer class="footer">
+  Eclipse for Hotels · Experiencias para el eclipse solar total de 2026
+</footer>
 
 </body>
 </html>
